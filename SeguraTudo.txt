@@ -1,0 +1,5 @@
+SELECT
+c.nome, a.numero, a.tipo, a.valor
+FROM
+clientes c, apolices a
+JOIN

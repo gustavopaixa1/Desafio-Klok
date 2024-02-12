@@ -12,5 +12,4 @@ Cypress.Commands.add('SelecionaeDigitaNaBarraDeBusca', function(item){
      // Clica na lupa para pesquisar 
     cy.get("[data-testid='search-submit']")                                      
     .click()
-    .wait(1000)
 })
