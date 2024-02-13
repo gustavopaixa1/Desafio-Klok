@@ -13,9 +13,14 @@
 
 ## Cenários de Teste 💼 :
 Para a criação dos cenários de testes devem ser considerados casos de sucesso e fluxos alternativos
-#### Caso de sucesso: Buscar um produto existente ✅
+#### Caso de sucesso: Buscar um produto existente por um nome incompleto ✅
     - Dado: que estou no site Magazine Luiza
-    - Quando: pesquiso um produto existente
+    - Quando: pesquiso um produto existente através do nome incompleto
+    - Então: recebo o resultado da busca feita
+
+#### Caso de sucesso: Buscar um produto existente por um nome completo ✅
+    - Dado: que estou no site Magazine Luiza
+    - Quando: pesquiso um produto existente através do nome exato
     - Então: recebo o resultado da busca feita
 
 #### Fluxo Alternativo 1: Buscar um produto inexistente ⚠️
@@ -27,13 +32,6 @@ Para a criação dos cenários de testes devem ser considerados casos de sucesso
     - Dado: que estou no site Magazine Luiza
     - Quando: pesquiso um item que não tem opção de seguro
     - e clico no botão adicionar ao carrinho
-    - Então: o produto é adicionado ao carrinho
-
-#### Fluxo Alternativo 3: Adicionar ao carrinho um item sem seguro 🛒
-    - Dado: que estou no site Magazine Luiza
-    - Quando: pesquiso um item com opção de seguro
-    - e clico no botão de adicionar ao carrinho
-    - e clico no botão de recusar o seguro
     - Então: o produto é adicionado ao carrinho
 
 
