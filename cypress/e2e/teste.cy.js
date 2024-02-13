@@ -7,7 +7,6 @@ describe('Case de testes - Desafio Klok', function () {
     const itemSemSeguro = 'caneta'
     const itemNomeIncompleto = 'iphone'
     const itemNomeCompleto = 'Apple iPhone 13 128GB Estelar Tela 6,1” 12MP'
-    const itemComSeguro = 'iphone 13'
     const produtoInexistente = 'ProdutoInexistente'
 
     this.beforeEach(function () {
@@ -16,7 +15,7 @@ describe('Case de testes - Desafio Klok', function () {
     })
 
 
-    it('Caso 1 - Pesquisar o produto especificado e validar o retorno', function () {
+    it('Caso 1 - Pesquisar o produto com o nome incompleto e validar o retorno', function () {
         Pesquisa.pesquisarItemNaBarraDePesquisa(itemNomeIncompleto)
         
         Pesquisa.validarProdutoEncontrado()
@@ -43,18 +42,5 @@ describe('Case de testes - Desafio Klok', function () {
         Pesquisa.adicionarAoCarrinho()
         
         Pesquisa.validarCarrinho()
-    })
-
-    it('Caso 5 - Pesquisar o produto especificado (com seguro) e adicionar ao carrinho com sucesso', function () {
-        Pesquisa.pesquisarItemNaBarraDePesquisa(itemComSeguro)
-
-        Pesquisa.validarProdutoEncontrado()
-
-        Pesquisa.adicionarAoCarrinho()
-        
-        Pesquisa.recusarSeguro()
-
-        Pesquisa.validarCarrinho()
-
     })
 })

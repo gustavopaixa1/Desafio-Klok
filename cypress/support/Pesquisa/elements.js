@@ -5,5 +5,6 @@ export const ELEMENTS = {
     barraDePesquisa: '[data-testid="input-search"]',
     botaoPesquisa: "[data-testid='search-submit']",
     botaoRecusarSeguro:'.reject-service-btn',
+    botaoAdicionarSeguro: '[data-testid="summary-continue-btn"]',
     botaoSelecionarUmSeguro: ':nth-child(1) > [data-testid="financia-service-card-container"] > .hlZlKC > :nth-child(1)',
 }
