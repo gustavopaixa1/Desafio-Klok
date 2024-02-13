@@ -1,5 +1,11 @@
 SELECT
-c.nome, a.numero, a.tipo, a.valor
+    c.nome AS Nome_Cliente,
+    apolices.numero_da_apolice,
+    apolices.tipo_de_seguro,
+    apolices.valor_do_premio
 FROM
-clientes c, apolices a
+    clientes c
 JOIN
+    apolices ON c.id_cliente = apolices.id_cliente
+WHERE
+    apolices.condicao = 'ativa';

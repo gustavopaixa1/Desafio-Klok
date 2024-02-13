@@ -9,7 +9,6 @@ module.exports = defineConfig({
     experimentalModifyObstructiveThirdPartyCode: true,
     experimentalRunAllSpecs: true,
     failOnStatusCode: false,
-    experimentalSessionSupport: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
