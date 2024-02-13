@@ -5,7 +5,6 @@ class Pesquisa {
     validarProdutoEncontrado() {
         cy.get('body', { timeout: 6000 }).should('contain', "Resultados para")
         cy.get('body', { timeout: 6000 }).should('contain', "produtos encontrados")
-
     }
 
     adicionarAoCarrinho() {

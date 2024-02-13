@@ -14,7 +14,7 @@ describe('Case de testes - Desafio Klok', function () {
     })
 
 
-    it('Caso 1 - Pesquisar o produto especificado e validar o retorno', function () {
+    it.only('Caso 1 - Pesquisar o produto especificado e validar o retorno', function () {
         Pesquisa.pesquisarItemNaBarraDePesquisa(item)
         
         Pesquisa.validarProdutoEncontrado()
@@ -30,7 +30,7 @@ describe('Case de testes - Desafio Klok', function () {
         Pesquisa.validarCarrinho()
     })
 
-    it.only('Caso 3 - Pesquisar o produto especificado (com seguro) e adicionar ao carrinho com sucesso', function () {
+    it('Caso 3 - Pesquisar o produto especificado (com seguro) e adicionar ao carrinho com sucesso', function () {
         Pesquisa.pesquisarItemNaBarraDePesquisa(itemComSeguro)
 
         Pesquisa.validarProdutoEncontrado()
