@@ -8,6 +8,7 @@ describe('Case de testes - Desafio Klok', function () {
     const itemNomeIncompleto = 'iphone'
     const itemNomeCompleto = 'Apple iPhone 13 128GB Estelar Tela 6,1” 12MP'
     const produtoInexistente = 'ProdutoInexistente'
+    const categoria = 'Natal'
 
     this.beforeEach(function () {
         cy.visit('https://www.magazineluiza.com.br/')
@@ -34,7 +35,17 @@ describe('Case de testes - Desafio Klok', function () {
         Pesquisa.validarProdutoNaoEncontrado(produtoInexistente)
     })
 
-    it('Caso 4 - Pesquisar o produto especificado (sem seguro) e adicionar ao carrinho com sucesso', function () {
+    it('Caso 4 - Selecionar categoria e validar que está na categoria correta', function () {
+        Pesquisa.encontrarCategoriaeSelecionar(categoria)
+
+        Pesquisa.validarCategoriaSelecionada(categoria)
+    })
+
+
+    /* O teste 5 por vezes necessita de autenticação do navegador e da rede do usuário, portanto, foi removido deste case de testes.
+    O teste pode ser executado ao remover os caracteres de comentários 
+
+    it('Caso 5 - Pesquisar o produto especificado (sem seguro) e adicionar ao carrinho com sucesso', function () {
         Pesquisa.pesquisarItemNaBarraDePesquisa(itemSemSeguro)
 
         Pesquisa.validarProdutoEncontrado()
@@ -42,5 +53,5 @@ describe('Case de testes - Desafio Klok', function () {
         Pesquisa.adicionarAoCarrinho()
         
         Pesquisa.validarCarrinho()
-    })
+     }) */
 })

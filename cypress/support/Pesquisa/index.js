@@ -38,6 +38,18 @@ class Pesquisa {
     validarCarrinho(){
         cy.get('.BasketPriceBox-prices-title--normal').should('contain', '1 item')
     }
+
+    encontrarCategoriaeSelecionar(categoria){
+        cy.get(el.botaoTodasCategorias).click()
+        cy.get(el.botaoSelecionarCategoria)
+        .contains(categoria)
+        .click()
+    }
+
+    validarCategoriaSelecionada(categoria){
+        cy.get(el.nomeDaCategoria)
+        .should('contain', categoria)
+    }
 }
 
 

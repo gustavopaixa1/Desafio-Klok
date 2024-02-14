@@ -1,12 +1,11 @@
 # DESAFIO KLOK - AUTOMAÇÃO WEB 👨🏽‍💻
 ------------------
 ## Descrição do Desafio 📖:  
+
 > Utilizando as ferramentas que preferir crie um teste automatizado que faça o fluxo de ponta a ponta de um cliente que:
-
-1. Entre em um grande portal de comércio online (Exemplo: Americanas, Submarino, Magazine Luiza)
-
-2. Faça uma busca por um produto
-3. Valide o retorno da busca
+> 1. Entre em um grande portal de comércio online (Exemplo: Americanas, Submarino, Magazine Luiza)
+> 2. Faça uma busca por um produto
+> 3. Valide o retorno da busca
 
 
 ---
@@ -28,11 +27,11 @@ Para a criação dos cenários de testes devem ser considerados casos de sucesso
     - Quando: pesquiso um produto inexistente
     - Então: recebo que o produto procurado não foi encontrado
 
-#### Fluxo Alternativo 2: Adicionar ao carrinho um item sem seguro 🛒
+#### Fluxo Alternativo 2: Selecionar uma categoria 🛒
     - Dado: que estou no site Magazine Luiza
-    - Quando: pesquiso um item que não tem opção de seguro
-    - e clico no botão adicionar ao carrinho
-    - Então: o produto é adicionado ao carrinho
+    - Quando: clico em todas as categorias
+    - e em seguida seleciono uma categoria
+    - Então: sou encaminhado para a página da categoria
 
 
 ## Ferramentas utilizadas 🔧  
@@ -50,25 +49,24 @@ Para a criação dos cenários de testes devem ser considerados casos de sucesso
 
 ## Instalação 🔧
 
-Para rodar os testes, é necessário possuir o NodeJs instalado na sua máquina, após isso, execute `npm install` (ou `npm i`) dentro da pasta do projeto para instalar as dependencias de desenvolvimento, a versão do Cypress especificada no projeto também é instalada automaticamente.
+Para rodar os testes, é necessário possuir o NodeJs instalado na sua máquina, após isso, execute `npm install` (ou `npm i`) dentro da pasta do projeto clonado no seu computador para instalar as dependencias de desenvolvimento, a versão do Cypress especificada no projeto também é instalada automaticamente.
 
-Caso seu terminal de comando aponte que o cypress não está instalado ao rodar os comandos a seguir, por favor, execute `npm ci` para um clean install das dependências.
+Caso seu terminal de comando aponte que o cypress não está instalado ao rodar os comandos a seguir, execute `npm ci` para um clean install das dependências.
 
-## Testes ⚙️
+## Execução dos Testes ⚙️
 
-Você pode rodar os testes  no modo Headless (através do terminal de comando), sem a inface gráfica ou através do modo interativo do Cypress.
+Você pode rodar os testes  no modo Headless (através do terminal de comando), sem a interface gráfica ou através do modo interativo do Cypress.
     - Execute `npm run cy:test` para rodar no modo headless 
     - Ou execute `npm run cy:open` para abrir o modo interativo do Cypress.
 
 ##### Execução no modo interativo:
 
-1️⃣ Selecionar E2E Testing;
-2️⃣ Escolher o navegador para testar, de preferência o Electron;
-3️⃣ Selecionar o arquivo de teste para rodar;
+1. Selecionar E2E Testing;
+2. Escolher o navegador para testar, de preferência o Electron;
+3. Selecionar o arquivo de teste para rodar;
 
 ## 
-<img  alt="Gif do Resultado" width="700" src="https://github.com/gustavopaixa1/Desafio-Klok/blob/main/resultado.gif?raw=true">
-
+<img  alt="Gif do Resultado" width="700" src="resultado.gif?raw=true">
 
 ## Resultados 📈
 Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome para melhor visualização dos resultados.
