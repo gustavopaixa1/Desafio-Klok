@@ -70,6 +70,14 @@ Você pode rodar os testes  no modo Headless (através do terminal de comando), 
 ## Resultados 📈
 Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome para melhor visualização dos resultados.
 
+## 
+<img  alt="Gif do Resultado" width="700" src="https://github.com/gustavopaixa1/Desafio-Klok/blob/main/resultado.gif?raw=true">
+
 
 ##### Report com Mochawesome:
-Após rodar o teste no modo headless, os resultados obtidos são salvos na pasta `reports/html`, além de um arquivo index.html contendo os resultados que podem ser acessados ao abrir o arquivo.
+Após rodar o teste no modo headless, os resultados obtidos são salvos na pasta `reports/html`, além de um arquivo index.html contendo os resultados que podem ser acessados ao abrir o arquivo. O report sobrescreve o anterior a cada execução no modo headless.
+
+<img src="resultado.png" alt="Texto Alternativo" width="700">
+
+
+    
