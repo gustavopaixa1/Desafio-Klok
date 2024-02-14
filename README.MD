@@ -42,6 +42,7 @@ Para a criação dos cenários de testes devem ser considerados casos de sucesso
     <img align="center" height="30" widith="40" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
     <img align="center" height="30" widith="40" src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" />
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img align="center" height="30" widith="40" src="https://camo.githubusercontent.com/bd3f4c518874c979bd4c149990871bdd7d2d6783b13cea27c9e0e40164c4fe54/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d6d6f6368617765736f6d652d2532333844363734383f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6f636861266c6f676f436f6c6f723d7768697465" />
 </div>
 
 
@@ -56,7 +57,13 @@ Para rodar os testes, é necessário possuir o NodeJs instalado na sua máquina,
 Você pode rodar os testes  no modo Headless (através do terminal de comando), sem a inface gráfica ou através do modo interativo do Cypress.
     - Execute `npm run cy:test` para rodar no modo headless 
     - Ou execute `npm run cy:open` para abrir o modo interativo do Cypress.
+- Execução no modo interativo:
+  1️⃣  Selecionar E2E Testing;
+  2️⃣ Escolher o navegador para testar;
+  3️⃣ Selecionar o arquivo de teste para rodar;
 
 
-## Resultados
-Os resultados dos testes 
+## Resultados 📈
+Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome na pasta no arquivo index.html da pasta reports\html.
+
+Também é possível verificar o vídeo salvo dos testes ao final da execução no modo headless.
