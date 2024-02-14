@@ -50,20 +50,26 @@ Para a criação dos cenários de testes devem ser considerados casos de sucesso
 
 ## Instalação 🔧
 
-Para rodar os testes, é necessário possuir o NodeJs instalado na sua máquina, após isso, execute `npm install` (ou `npm i`) dentro da pasta do projeto para instalar as dependencias de desenvolvimento, a versão do Cypress especificada no projeeto também é instalada automaticamente.
+Para rodar os testes, é necessário possuir o NodeJs instalado na sua máquina, após isso, execute `npm install` (ou `npm i`) dentro da pasta do projeto para instalar as dependencias de desenvolvimento, a versão do Cypress especificada no projeto também é instalada automaticamente.
+
+Caso seu terminal de comando aponte que o cypress não está instalado ao rodar os comandos a seguir, por favor, execute `npm ci` para um clean install das dependências.
 
 ## Testes ⚙️
 
 Você pode rodar os testes  no modo Headless (através do terminal de comando), sem a inface gráfica ou através do modo interativo do Cypress.
     - Execute `npm run cy:test` para rodar no modo headless 
     - Ou execute `npm run cy:open` para abrir o modo interativo do Cypress.
-- Execução no modo interativo:
-  1️⃣  Selecionar E2E Testing;
-  2️⃣ Escolher o navegador para testar;
-  3️⃣ Selecionar o arquivo de teste para rodar;
+
+##### Execução no modo interativo:
+
+1️⃣ Selecionar E2E Testing;
+2️⃣ Escolher o navegador para testar, de preferência o Electron;
+3️⃣ Selecionar o arquivo de teste para rodar;
 
 
 ## Resultados 📈
-Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome na pasta no arquivo index.html da pasta reports\html.
+Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome para melhor visualização dos resultados.
 
-Também é possível verificar o vídeo salvo dos testes ao final da execução no modo headless.
+
+##### Report com Mochawesome:
+Após rodar o teste no modo headless, os resultados obtidos são salvos na pasta `reports/html`, além de um arquivo index.html contendo os resultados que podem ser acessados ao abrir o arquivo.
