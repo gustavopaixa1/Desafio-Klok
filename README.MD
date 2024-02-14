@@ -66,12 +66,12 @@ Você pode rodar os testes  no modo Headless (através do terminal de comando), 
 2️⃣ Escolher o navegador para testar, de preferência o Electron;
 3️⃣ Selecionar o arquivo de teste para rodar;
 
+## 
+<img  alt="Gif do Resultado" width="700" src="https://github.com/gustavopaixa1/Desafio-Klok/blob/main/resultado.gif?raw=true">
+
 
 ## Resultados 📈
 Além dos resultados do modo interativo e do modo headless, também é possível encontrar o report personalizado dos testes feito com o Mochawesome para melhor visualização dos resultados.
-
-## 
-<img  alt="Gif do Resultado" width="700" src="https://github.com/gustavopaixa1/Desafio-Klok/blob/main/resultado.gif?raw=true">
 
 
 ##### Report com Mochawesome:
